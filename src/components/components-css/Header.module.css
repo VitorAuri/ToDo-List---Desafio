@@ -1,0 +1,50 @@
+/*Header*/
+.header{
+    background: var(--gray-700);
+    width: 100%;
+    height: 12.5rem;
+    display: flex;
+    justify-content: center;
+}
+.headerContent{
+    margin: auto 0;
+}
+
+/*Task Related*/
+.createTask{
+    position: absolute;
+    margin-top: -2rem;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+}
+.inputTask{
+    background: var(--gray-500);
+    border: none;
+    width: 46rem;
+    height: 3.375rem;
+    border-radius: 8px;
+    text-indent: 2%;
+}
+.aroundButton{
+    text-align: center;
+}
+.button{
+    color: var(--gray-100);
+    background: var(--blue-dark);
+    border: none;
+    border-radius: 8px;
+    width: 6.5rem;
+    height: 3.375rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+.buttonIcon{
+    margin-top: 0.9rem;
+    margin-left: 0.5rem;
+}
+.buttonContent{
+    margin: auto 0;
+}
