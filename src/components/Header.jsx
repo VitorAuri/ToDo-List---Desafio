@@ -4,6 +4,11 @@ import {  PlusCircle  } from 'phosphor-react'
 
 
 export function Header(){
+
+    function CreateTask(){
+        console.log('Estou funcionando!')
+    }
+
     return (
         <header>
             <div className={styles.header}>
@@ -12,16 +17,16 @@ export function Header(){
                 </div>
             </div>
 
-            <div className={styles.createTask}>
+            <form className={styles.createTask}>
                 <input className={styles.inputTask} type="text" required placeholder='Adicione uma nova tarefa'/>
 
                 <div className={styles.aroundButton}>
-                    <button className={styles.button}>
+                    <button onClick={CreateTask} className={styles.button}>
                         <div className={styles.buttonContent}>Criar</div>
                         <PlusCircle className={styles.buttonIcon} size={25}/>
                     </button>
                 </div>
-            </div>
+            </form>
         </header>
     )
 }

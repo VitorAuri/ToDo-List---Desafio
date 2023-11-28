@@ -1,0 +1,89 @@
+.centralizer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+/*HEADER*/
+.taskBox{
+    width: 65%;
+    height: 2rem;
+    margin-top: 5rem;
+    display: inline-flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--gray-500);
+}
+.createdTasks{
+    display: inline-flex;
+    color: var(--blue);
+    position: absolute;
+    left: 18%;
+}
+.createdCount{
+    background: var(--gray-500);
+    width: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    margin-left: 0.5rem;
+}
+.finishedTasks{
+    display: inline-flex;
+    color: var(--purple-dark);
+    position: absolute;
+    right: 18%;
+}
+.finishedCount{
+    background: var(--gray-500);
+    width: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    margin-left: 0.5rem;
+}
+
+/*TASK MANAGER*/
+.noTasks{
+    margin-top: 2rem;
+    text-align: center;
+    position: absolute;
+    z-index: -1;
+}
+.noTasksH1, .noTasksP{
+    font-size: 1rem;
+    color: var(--gray-300);
+}
+.noTasksH1{
+    font-weight: bold;
+}
+.taskList{
+    position: absolute;
+    background: var(--gray-600);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+@media (max-width: 412px){
+    .taskBox{
+        width: 90%;
+        height: 2rem;
+        margin-top: 5rem;
+        display: inline-flex;
+        justify-content: center;
+        border-bottom: 1px solid var(--gray-500);
+    }
+    .createdTasks{
+        display: inline-flex;
+        color: var(--blue);
+        position: absolute;
+        left: 12%;
+    }
+    .finishedTasks{
+        display: inline-flex;
+        color: var(--purple-dark);
+        position: absolute;
+        right: 12%;
+    }
+}

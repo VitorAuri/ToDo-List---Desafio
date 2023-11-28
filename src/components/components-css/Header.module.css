@@ -25,6 +25,7 @@
     height: 3.375rem;
     border-radius: 8px;
     text-indent: 2%;
+    color: var(--gray-100);
 }
 .aroundButton{
     text-align: center;
