@@ -4,7 +4,7 @@
     position: relative;
 }
 /*HEADER*/
-.taskBox{
+.taskInfo{
     width: 65%;
     height: 2rem;
     margin-top: 5rem;
@@ -55,13 +55,16 @@
 .noTasksH1{
     font-weight: bold;
 }
+
+/*Task List when Created*/
+.centralizerList{
+    display: flex;
+    justify-content: center;
+}
 .taskList{
     position: absolute;
     background: var(--gray-600);
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
+    width: 60%;
     z-index: 1;
 }
 
