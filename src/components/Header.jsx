@@ -6,6 +6,8 @@ import {  PlusCircle  } from 'phosphor-react'
 export function Header(){
 
     function CreateTask(){
+        event.preventDefault()
+        
         console.log('Estou funcionando!')
     }
 
