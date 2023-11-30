@@ -15,18 +15,14 @@
     color: var(--blue);
     border: none;
     background: transparent;
-    width: 2rem;
-    height: 2rem;
-    margin-right: 2rem;
     margin-left: 0.2rem;
     margin-top: 0.5rem;
 }
 .taskText{
     margin-top: 0.5rem;
+    margin-left: 1rem;
 }
 .trash{
-    position: absolute;
-    right: 0;
     margin-top: 0.5rem;
     margin-right: 1rem;
     cursor: pointer;
@@ -41,4 +37,10 @@
     color: var(--gray-100);
     background: var(--purple-dark);
     border-radius: 100%;
+}
+
+@media (max-width: 280px){
+    .taskBox{
+        padding-right: 12rem;
+    }
 }

@@ -137,6 +137,7 @@
         position: absolute;
         display: flex;
         justify-content: center;
+        z-index: 3;
     }
     .buttonIcon{
         margin-top: 0.45rem;
