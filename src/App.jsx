@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Header } from './components/Header.jsx'
-import { Tasks } from './components/TaskList.jsx'
+import { TaskList } from './components/TaskList.jsx'
 
 export function App() {
 
@@ -8,7 +8,7 @@ export function App() {
     <div>
       <Header />
       <main>
-        <Tasks />
+        <TaskList />
       </main>
     </div>
   )

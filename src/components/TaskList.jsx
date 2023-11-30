@@ -1,14 +1,13 @@
 import { TaskBox } from './TaskBox.jsx'
 import { WhenNoTasks } from './WhenNoTasks.jsx'
-import {  PlusCircle  } from 'phosphor-react'
+import { PlusCircle  } from 'phosphor-react'
 
 import styles from './components-css/TaskList.module.css'
 import { useState } from 'react'
 
-export function Tasks(){
+export function TaskList(){
 
-    const [task, setTask] = useState([
-    ])
+    const [task, setTask] = useState([])
 
     const [newTaskText, setNewTaskText] = useState('')
 
@@ -22,10 +21,19 @@ export function Tasks(){
         setNewTaskText(event.target.value)
     }
 
+
+    const [markCount, setMarkCount] = useState(0)
+    function countTask(){
+        setMarkCount((prevMarkCount) => prevMarkCount + 1)
+    }
+
     function deleteTask(taskToDelete){
         const tasksWithoutDeletedOne = task.filter(task => {
             return task != taskToDelete
         })
+        {
+            setMarkCount((prevMarkCount) => prevMarkCount - 1)
+        }
         setTask(tasksWithoutDeletedOne)
     }
 
@@ -57,12 +65,14 @@ export function Tasks(){
                     <p>Tarefas Criadas</p><span className={styles.createdCount}>{task.length}</span>
                 </div>
                 <div className={styles.finishedTasks}>
-                    <p>Concluidas</p><span className={styles.finishedCount}>0 de {task.length}</span>
+                    <p>Concluidas</p><span className={styles.finishedCount}>{markCount} de {task.length}</span>
                 </div>
             </header>
         </div>
         <div className={styles.centralizer}>
-            <WhenNoTasks/>
+            {
+                task<=1 ? <WhenNoTasks/> : <div></div>
+            }
         </div>
 
         <div className={styles.centralizerList}>
@@ -72,6 +82,7 @@ export function Tasks(){
                     <TaskBox
                     key={task}
                     content={task} 
+                    onCounting={countTask}
                     onDeleteTask={deleteTask}
                     />
                 )

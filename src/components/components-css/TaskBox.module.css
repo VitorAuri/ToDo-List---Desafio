@@ -37,3 +37,8 @@
 .trash:hover{
     color: var(--red-danger);
 }
+.checked{
+    color: var(--gray-100);
+    background: var(--purple-dark);
+    border-radius: 100%;
+}
