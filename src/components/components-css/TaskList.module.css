@@ -1,0 +1,115 @@
+.centralizer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+/*HEADER*/
+.taskInfo{
+    width: 65%;
+    height: 2rem;
+    margin-top: 5rem;
+    display: inline-flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--gray-500);
+}
+.createdTasks{
+    display: inline-flex;
+    color: var(--blue);
+    position: absolute;
+    left: 18%;
+}
+.createdCount{
+    background: var(--gray-500);
+    width: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    margin-left: 0.5rem;
+}
+.finishedTasks{
+    display: inline-flex;
+    color: var(--purple-dark);
+    position: absolute;
+    right: 18%;
+}
+.finishedCount{
+    background: var(--gray-500);
+    width: 4rem;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    margin-left: 0.5rem;
+}
+/*Task List when Created*/
+.centralizerList{
+    display: flex;
+    justify-content: center;
+}
+.taskList{
+    position: absolute;
+    background: var(--gray-600);
+    width: 60%;
+    z-index: 1;
+}
+/*Task Form*/
+.createTask{
+    position: absolute;
+    margin-top: -2rem;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+}
+.inputTask{
+    background: var(--gray-500);
+    border: none;
+    width: 46rem;
+    height: 3.375rem;
+    border-radius: 8px;
+    text-indent: 2%;
+    color: var(--gray-100);
+}
+.aroundButton{
+    text-align: center;
+}
+.button{
+    color: var(--gray-100);
+    background: var(--blue-dark);
+    border: none;
+    border-radius: 8px;
+    width: 6.5rem;
+    height: 3.375rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+.buttonIcon{
+    margin-top: 0.9rem;
+    margin-left: 0.5rem;
+}
+.buttonContent{
+    margin: auto 0;
+}
+
+@media (max-width: 412px){
+    .taskBox{
+        width: 90%;
+        height: 2rem;
+        margin-top: 5rem;
+        display: inline-flex;
+        justify-content: center;
+        border-bottom: 1px solid var(--gray-500);
+    }
+    .createdTasks{
+        display: inline-flex;
+        color: var(--blue);
+        position: absolute;
+        left: 12%;
+    }
+    .finishedTasks{
+        display: inline-flex;
+        color: var(--purple-dark);
+        position: absolute;
+        right: 12%;
+    }
+}

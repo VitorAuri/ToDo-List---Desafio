@@ -1,34 +1,24 @@
-import styles from './components-css/TasksBox.module.css'
+import styles from './components-css/TaskBox.module.css'
 import {CheckCircle, Circle, Trash} from 'phosphor-react'
 
-export function TaskBox(props){
+export function TaskBox({content, onDeleteTask}){
 
-    let uncheckedTask = <Circle size={25}/>
-
-    function Check(){
-        let i = 0
-        i += 1
-
-        if (i==1){
-            let uncheckedTask = <CheckCircle/>
-        }
-        else{
-            let uncheckedTask = <Circle/>
-        }
+    function handleDeleteTaskt(){
+        onDeleteTask(content)
     }
 
     return(
         <div>
             <div className={styles.taskBox}>
-                <button className={styles.button} onClick={Check}>{uncheckedTask}</button>
+                <button className={styles.button}><Circle size={25}/></button>
                 
                 <div className={styles.taskText}>
-                    <p>{props.task}</p>
+                    <p>{content}</p>
                 </div>
                 
-                <div className={styles.trash}>
+                <button onClick={handleDeleteTaskt} className={styles.trash}>
                     <Trash size={25}/>
-                </div>
+                </button>
             </div>
         </div>
     )

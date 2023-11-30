@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Header } from './components/Header.jsx'
-import { Tasks } from './components/Tasks.jsx'
+import { Tasks } from './components/TaskList.jsx'
 
 export function App() {
 
