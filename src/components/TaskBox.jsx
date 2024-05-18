@@ -8,15 +8,21 @@ export function TaskBox({content, onDeleteTask, onCounting}){
     
     function handleCheckTask (){
         event.preventDefault()
-      setIsMarked(prevIsMarked => !prevIsMarked)
+        setIsMarked(prevIsMarked => !prevIsMarked)
     };
 
-    
 
     const circle = isMarked ? <Circle size={25} /> : <CheckCircle className={styles.checked} size={25}/>;
 
+    const [wasMarked,setWasMarked] = useState(false)
     function handleCountMarkedTask(){
         onCounting()
+        if(wasMarked==false){
+            setWasMarked(true)
+        }
+        else{
+            setWasMarked(false)
+        }
     }
     function handleDeleteTask(){
         onDeleteTask(content)
