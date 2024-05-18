@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { PlusCircle } from 'phosphor-react';
 import { TaskBox } from './TaskBox.jsx';
 import { WhenNoTasks } from './WhenNoTasks.jsx';
-import styles from './components-css/TaskList.module.css';
+import styles from '../components-css/TaskList.module.css';
 
 export function TaskList() {
     const [tasks, setTasks] = useState([]);

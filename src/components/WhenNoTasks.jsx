@@ -1,4 +1,4 @@
-import styles from './components-css/WhenNoTasks.module.css'
+import styles from '../components-css/WhenNoTasks.module.css'
 import clipboard from '../assets/clipboard.svg'
 
 export function WhenNoTasks(){

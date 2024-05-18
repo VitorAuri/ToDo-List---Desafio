@@ -1,6 +1,6 @@
 import {TaskBox} from './TaskBox.jsx'
 
-import styles from './components-css/Tasks.module.css'
+import styles from '../components-css/Tasks.module.css'
 import clipboard from '../assets/clipboard.svg'
 
 export function Tasks(){

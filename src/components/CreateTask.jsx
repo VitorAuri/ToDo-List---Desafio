@@ -1,4 +1,4 @@
-import styles from './components-css/CreateTasks.module.css'
+import styles from '../components-css/CreateTasks.module.css'
 
 export function CreateTask(){
     return(

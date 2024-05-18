@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from './components-css/TaskBox.module.css'
+import styles from '../components-css/TaskBox.module.css'
 import { CheckCircle, Circle, Trash } from 'phosphor-react'
 
 export function TaskBox({content, onDeleteTask, onCounting}){
