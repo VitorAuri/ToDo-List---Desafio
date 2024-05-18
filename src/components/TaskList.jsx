@@ -73,7 +73,7 @@ export function TaskList() {
                 </header>
             </div>
             <div className={styles.centralizer}>
-                {tasks.length <= 1 ? <WhenNoTasks /> : null}
+                {tasks.length <= 0 ? <WhenNoTasks /> : <></>}
             </div>
             <div className={styles.centralizerList}>
                 <div className={styles.taskList}>
