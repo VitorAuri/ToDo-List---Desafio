@@ -1,6 +1,6 @@
 import { Header } from './components/Header.jsx'
 import { TaskList } from './components/TaskList.jsx'
-import './Global.module.css'
+import './components-css/Global.module.css'
 
 export function App() {
 
